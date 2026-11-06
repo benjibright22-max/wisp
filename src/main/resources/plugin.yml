@@ -1,0 +1,31 @@
+name: Silhouette
+version: 1.0.0
+main: com.example.silhouette.SilhouettePlugin
+api-version: '1.21'
+description: Silhouette (true invisibility chestplate), snorlax (a snowball that freezes what it hits) and division (a fishing rod that swaps places).
+depend: [ProtocolLib]
+
+commands:
+  silhouette:
+    description: Give yourself (or someone else) the Silhouette chestplate.
+    usage: /silhouette [player]
+    permission: silhouette.give
+  snorlax:
+    description: Give yourself (or someone else) the snorlax snowball.
+    usage: /snorlax [player]
+    permission: snorlax.give
+  division:
+    description: Give yourself (or someone else) the division fishing rod.
+    usage: /division [player]
+    permission: division.give
+
+permissions:
+  silhouette.give:
+    description: Allows giving the Silhouette chestplate.
+    default: op
+  snorlax.give:
+    description: Allows giving the snorlax snowball.
+    default: op
+  division.give:
+    description: Allows giving the division fishing rod.
+    default: op
